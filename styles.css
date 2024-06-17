@@ -88,10 +88,15 @@
         margin-top: 25px;
     }
     
-    .button-and-image {
-        display: flex;
-        align-items: center;
-        margin-top: 20px;
+    
+      .button-and-image {
+     display: flex;
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
     }
     
     .button1 {
@@ -125,54 +130,50 @@
     }
     
     .dividerwide {
-        border-top: 15px solid grey;
-        margin: 0px 0 0 ;
-        margin-top: 30px;
-        width: 116.3em;
+          border-top: 15px solid grey;
+    margin: 0px 0 0;
+    margin-top: 5em;
+    width: -webkit-fill-available;
     }
     
     
     .blue-box {
-        display: flex;
-        align-items: center;
-        background-color: #E5F6F4;
-        padding: 2em;
-        margin-top: -0.5px;
-        justify-content: space-between;
-        position: relative;
-        height: 29em;
-        width: fit-content;
+    display: flex;
+    background-color: #E5F6F4;
+    padding: 2em;
+    margin-top: -0.5px;
+    justify-content: space-evenly;
+    width: -webkit-fill-available;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    height: fit-content;
+    align-content: center;
+    align-items: center;
+
     }
     
     .info-image {
-    width: 61%;
-    height: 106%;
-    object-fit: unset;
-    margin-right: 163px;
-    margin-top: -3.5px;
+       width: 29%;
+    height: auto;
         
     }
     
- 
     .text-box {
-    margin-left: 293.5px;
-    margin-top: -28px;
-    width: 84em;
+    width: 47em;
     }
     
     .text-box h1 {
-        font-size: 56px;
-        font-family: 'DM Sans Bold', sans-serif;
-        font-weight: bold;
-        text-align: left;
-        width:11em;
+      font-size: 3em;
+    font-family: 'DM Sans Bold', sans-serif;
+    font-weight: bold;
+    text-align: left;
+    width: auto;
     }
     
     .text-box p {
-        font-size: 22px;
-        margin: 10px 0;
-        width: 21em;
-        text-align: left;
+     font-size: 1.3em;
+    width: auto;
+    text-align: left;
     }
     .text-box p1 {
         font-size: 20px;
@@ -204,22 +205,33 @@
     }
     
     .white-box {
-        display: flex;
-        align-items: center;
-        background-color: #FFFFFF;
-        padding: 20px;
-        margin-top: -0.5px;
-        position: relative;
-        height: 450px;
+ display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 20px;
+    height: 24em;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
     }
-    
+     
+    .bottom-box {
+         display: flex;
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin-top: -0.5px;
+    position: relative;
+    height: fit-content;
+    margin-left: -1em;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    }
     .text-body {
-        min-height: 500px;
-        padding: 30px;
-        margin-left: 293.5px;
-        margin-top: 210px;
-        width: 625px;
-         position: absolute;
+      padding: 30px;
+    width: 566px;
     }
     
     .text-body h2 {
@@ -241,10 +253,7 @@
     .text-body-low {
         min-height: 500px;
         padding: 30px;
-        margin-top: 210px;
-        width: 550px;
-        position: absolute;
-        margin-left: 1022px;
+        width: 520px;
     }
     
     .text-body-low h2 {
@@ -264,172 +273,139 @@
     }
     
     .text-body-out {
-        min-height: 200px;
         padding: 30px;
-        margin-top: -230px;
-        width: 900px;
-        position: absolute;
-        margin-left: 400px;
         text-align: center;
     }
     
     .text-body-out h3 {
-        font-size: 44px;
-        font-family: 'DM Sans Bold', sans-serif;
-        font-weight: bold;
-        text-align: center;
-        margin-top: 20px;
-        margin-bottom: 25px;
+      font-size: 44px;
+    font-family: 'DM Sans Bold', sans-serif;
+    font-weight: bold;
+    text-align: center;
     }
     
     .text-body-out p3  {
         font-size: 16px;
-        font-family: 'DM Sans', sans-serif;
-        font-weight: medium;
-        text-align: center;
-        margin-top: 20px;
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
     }
-        .text-small-left {
-         min-height: 200px;
+
+    .text-small{
+          display: flex;
+    }
+    
+    .text-small-left {
+
         padding: 15px;
-        margin-top: -850px;
         width: 371px;
-        position: absolute;
-        margin-left: 932px;
         text-align: center;
     }
     
     .text-small-left h4 {
-        font-size: 18px;
-        font-family: 'DM Sans Bold', sans-serif;
-        font-weight: bold;
-        text-align: center;
-        margin-top: 20px;
-        margin-bottom: 25px;
+       font-size: 18px;
+    font-family: 'DM Sans Bold', sans-serif;
+    font-weight: bold;
+    text-align: center;
     }
     
     .text-small-left p4  {
-        font-size: 16px;
-        font-family: 'DM Sans', sans-serif;
-        font-weight: medium;
-        text-align: center;
-        margin-top: 20px;
+          font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
     }
     
     
     .text-small-right {
-         min-height: 200px;
         padding: 15px;
-        margin-top: -850px;
         width: 371px;
-        position: absolute;
-        margin-left: 412px;
         text-align: center;
     }
     
     .text-small-right h4 {
-        font-size: 18px;
-        font-family: 'DM Sans Bold', sans-serif;
-        font-weight: bold;
-        text-align: center;
-        margin-top: 20px;
-        margin-bottom: 25px;
+            font-size: 18px;
+    font-family: 'DM Sans Bold', sans-serif;
+    font-weight: bold;
+    text-align: center;
     }
     
     .text-small-right p4  {
-        font-size: 16px;
-        font-family: 'DM Sans', sans-serif;
-        font-weight: medium;
-        text-align: center;
-        margin-top: 20px;
+           font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
     }
     
     .text-small-leftd {
-         min-height: 200px;
-        padding: 15px;
-        margin-top: -620px;
+      padding: 15px;
         width: 371px;
-        position: absolute;
-        margin-left: 932px;
         text-align: center;
     }
     
     .text-small-leftd h4 {
-        font-size: 18px;
-        font-family: 'DM Sans Bold', sans-serif;
-        font-weight: bold;
-        text-align: center;
-        margin-top: 56px;
-        margin-bottom: 25px;
+            font-size: 18px;
+    font-family: 'DM Sans Bold', sans-serif;
+    font-weight: bold;
+    text-align: center;
     }
     
     .text-small-leftd p4  {
-        font-size: 16px;
-        font-family: 'DM Sans', sans-serif;
-        font-weight: medium;
-        text-align: center;
-        margin-top: 20px;
+         font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
     }
     
     
     .text-small-rightd {
-         min-height: 200px;
-        padding: 15px;
-        margin-top: -620px;
+     padding: 15px;
         width: 371px;
-        position: absolute;
-        margin-left: 412px;
         text-align: center;
     }
     
     .text-small-rightd h4 {
         font-size: 18px;
-        font-family: 'DM Sans Bold', sans-serif;
-        font-weight: bold;
-        text-align: center;
-       margin-top: 56px;
-        margin-bottom: 25px;
-    }
-    
-    .text-small-rightd p4  {
-        font-size: 16px;
-        font-family: 'DM Sans', sans-serif;
-        font-weight: medium;
-        text-align: center;
-        margin-top: 20px;
-    }
-    
-    .grey-box {
-        display: flex;
-        align-items: center;
-        background-color: #262626;
-        padding: 20px;
-          margin-top: 89.5px;
-        justify-content: space-between;
-        position: relative;
-        height: 450px;
-        width: 1825px;
-        margin-left:-20px;
-    }
-    
-    .text-tes-left {
-         min-height: 200px;
-        padding: 15px;
-        margin-top: 389px;
-        width: 371px;
-        position: absolute;
-        margin-left: 353px;
-        text-align: center;
-        color:white;
-    }
-    
-    .text-tes-left h5 {
-      font-size: 18px;
     font-family: 'DM Sans Bold', sans-serif;
     font-weight: bold;
     text-align: center;
-    margin-top: 6px;
-    margin-bottom: 25px;
+    }
+    
+    .text-small-rightd p4  {
+         font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    }
+    .small-up, .small-down{
+          display: flex;
+    }
+    
+     .grey-box {
+           display: flex;
+    align-items: center;
+    background-color: #262626;
+    padding: 20px;
+    margin-top: -0.5px;
+    justify-content: center;
+    position: relative;
+    height: 33em;
+    width: -webkit-fill-available;
+    margin-left: -20px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+    }
+    
+    .text-tes-left {
+      padding: 15px;
+    width: 371px;
+    text-align: center;
+    color: white;
+    }
+    
+    .text-tes-left h5 {
+        font-size: 18px;
+        font-family: 'DM Sans Bold', sans-serif;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 25px;
     }
     
     .text-tes-left p5  {
@@ -438,29 +414,23 @@
         font-weight: medium;
         text-align: center;
         margin-top: 20px;
-            width: 24em;
     }
     
         .text-tes-right {
-         min-height: 200px;
-        padding: 15px;
-        margin-top: 379px;
-        width: 371px;
-        position: absolute;
-          margin-left: 957px;
-        text-align: center;
-            color:white;
+     padding: 15px;
+    width: 371px;
+    text-align: center;
+    color: white;
     }
     
     .text-tes-right h5 {
         font-size: 18px;
-    font-family: 'DM Sans Bold', sans-serif;
-    font-weight: bold;
-    text-align: center;
-       margin-top: 13px;
-    margin-right: 36px;
-    margin-bottom: 25px;
-    width: 24em;
+        font-family: 'DM Sans Bold', sans-serif;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 25px;
+        
     }
     
     .text-tes-right p5  {
@@ -473,45 +443,25 @@
     
     
     .fund-image {
-        width: 500px;
-        height: auto;
-        margin-right: 135px;
-        margin-top: -53.5px;
-        position: absolute;
-        margin-left: 293.5px;
+      width: 675px;
+    height: auto;
     }
     
     .funding-video {
         width: 500px;
         height: auto;
-        margin-right: 135px;
-        margin-top: 5.5px;
-        position: absolute;
-        margin-left: 1050px;
+
     }
     
     .testimony-right {
         width: 500px;
         height: auto;
-        margin-top: -114.5px;
-        position: absolute;
-        margin-left: 929px;
+
     }
         .testimony-left {
         width: 500px;
         height: auto;
-        margin-top: -115px;
-        position: absolute;
-        margin-left: 305px;
-    }
 
-    .bookingout-image {
-
-    width: 350px;
-    height: auto;
-    margin-top: -113.5px;
-    position: absolute;
-    margin-left: 965px;
     }
         
     /* Modal Styles */
